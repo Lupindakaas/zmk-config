@@ -27,7 +27,7 @@
 	                &kp LSHFT &mo NUMBERS &kp LSHFT &kp RET &kp HOME   &kp PG_UP  &kp BSPC  &kp SPACE &kp LSHFT &kp LSHFT
 			>;
 
-			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>; };
+			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>; 
 	};
 
 		number_layer {
@@ -43,6 +43,7 @@
 	               &kp LSHFT &mo NUMBERS &kp LSHFT &kp RET &kp HOME               &kp PG_UP &kp BSPC  &kp SPACE &kp N0 &kp LSHFT
 			>;
 
-			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>; };
+			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>; 
+		};
 	};
 };
