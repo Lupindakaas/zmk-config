@@ -10,7 +10,7 @@
 #define DEFAULT 0
 #define NUMBERS 1
 #define SYMBOLS 2
-#define GAMING  2
+#define GAMING  3
 
 / {
 	keymap {
