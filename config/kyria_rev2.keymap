@@ -84,12 +84,12 @@
 // |BtSel0|BtSel1|BtSel2|BtSel3|BtSel4|BT_CLR|                                          |      |       |       |      |       |      |
 // |      |      |      |      |      |      |                                          |      |       |       |      |       |      |
 // |      |      |      |      |      |      |         |         |  | DEVICE  |  SUPER  |      |       |       |      |       |      |
-//                      |      |      |NUMBER|   RET   |  END    |  |  PGUP   |  BSPC   | SPACE|SYMBOLS|       |
+//                      |      |      |NUMBER|   RET   |  HOME   |  |  PGUP   |  BSPC   | SPACE|SYMBOLS|       |
 			bindings = <
-	&bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &bt BT_CLR                              &trans &trans &trans &trans &trans &trans
-	&trans       &trans       &trans       &trans       &trans       &trans                                  &trans &trans &trans &trans &trans &trans
-	&trans       &trans       &trans       &trans       &trans       &trans           &mo DEVICE &kp LSHFT   &trans &trans &trans &trans &trans &trans
-	                              &kp LSHFT &mo NUMBERS &kp LSHFT &kp RET &kp HOME    &kp PG_UP &kp BSPC  &kp SPACE &mo SYMBOLS &kp LSHFT
+	&bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &bt BT_CLR                                             &trans &trans &trans &trans &trans &trans
+	&trans       &trans       &trans       &trans       &trans       &trans                                                 &trans &trans &trans &trans &trans &trans
+	&trans       &trans       &trans       &trans       &trans       &trans     &trans   &trans        &mo DEVICE &kp LSHFT &trans &trans &trans &trans &trans &trans
+	                          &kp LSHFT    &mo NUMBERS  &kp LSHFT    &kp RET    &kp HOME               &kp PG_UP &kp BSPC   &kp SPACE &mo SYMBOLS &kp LSHFT
 			>;
 
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>; 
