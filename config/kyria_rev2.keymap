@@ -6,11 +6,13 @@
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/bt.h>
 
 #define DEFAULT 0
 #define NUMBERS 1
 #define SYMBOLS 2
 #define GAMING  3
+#define DEVICE  4
 
 / {
 	keymap {
@@ -20,12 +22,12 @@
 // ---------------------------------------------------------------------------------------------------------------------------------
 // |  TAB  |  Q  |  W  |  E   |  R   |  T   |                                          |  Y   |  U    |  I    |  O   |   P   |      |
 // |  ESC  |  A  |  S  |  D   |  F   |  G   |                                          |  H   |  J    |  K    |  L   |       |      |
-// |  CTRL |  Z  |  Z  |  X   |  C   |  V   |         |         |  |         |  SUPER  |      |  B    |  N    |  M   |       |      |
+// |  CTRL |  Z  |  Z  |  X   |  C   |  V   |         |         |  | DEVICE  |  SUPER  |      |  B    |  N    |  M   |       |      |
 //                     |      |      |NUMBER|   RET   |  HOME   |  |  PGUP   |  BSPC   | SPACE| LSHFT |SYMBOLS|
 			bindings = <
 	&kp TAB   &kp Q &kp W &kp E &kp R &kp T                                                &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSLH
 	&kp ESC   &kp A &kp S &kp D &kp F &kp G                                                &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
-	&kp LCTRL &kp Z &kp Z &kp X &kp C &kp V &kp LSHFT &kp LSHFT        &kp LSHFT &kp LMETA &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp RCTRL
+	&kp LCTRL &kp Z &kp Z &kp X &kp C &kp V &kp LSHFT &kp LSHFT        &mo DEVICE &kp LMETA &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp RCTRL
 	                &kp LSHFT &mo NUMBERS &kp LSHFT &kp RET &kp HOME   &kp PG_UP  &kp BSPC  &kp SPACE &mo SYMBOLS &kp LSHFT
 			>;
 
@@ -74,6 +76,21 @@
 	&kp UNDER &kp F8   &kp PRCNT  &kp DOT   &kp COMMA &kp APOS                                            &kp CARET &kp PIPE &kp KP_LPAR &kp KP_RPAR &kp EQUAL &kp ASTERISK
 	&kp CAPS  &kp HASH &kp DLLR   &kp EXCL  &kp SEMI  &kp GRAVE &kp LSHFT &kp LSHFT   &kp LSHFT &kp LMETA &kp GT    &kp BSLH &kp LBKT    &kp RBKT    &kp MINUS &kp AMPS
 	                              &kp LSHFT &mo NUMBERS &kp LSHFT &kp RET &kp HOME    &kp PG_UP &kp BSPC  &kp SPACE &mo SYMBOLS &kp LSHFT
+			>;
+
+			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>; 
+		};
+			device_layer {
+// ---------------------------------------------------------------------------------------------------------------------------------
+// |BtSel0|BtSel1|BtSel2|BtSel3|BtSel4|BT_CLR|                                          |      |       |       |      |       |      |
+// |      |      |      |      |      |      |                                          |      |       |       |      |       |      |
+// |      |      |      |      |      |      |         |         |  | DEVICE  |  SUPER  |      |       |       |      |       |      |
+//                      |      |      |NUMBER|   RET   |  HOME   |  |  PGUP   |  BSPC   | SPACE|SYMBOLS|       |
+			bindings = <
+	&bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &bt BT_CLR                                             &trans &trans &trans &trans &trans &trans
+	&trans       &trans       &trans       &trans       &trans       &trans                                                 &trans &trans &trans &trans &trans &trans
+	&trans       &trans       &trans       &trans       &trans       &trans     &trans   &trans        &mo DEVICE &kp LSHFT &trans &trans &trans &trans &trans &trans
+	                                       &kp LSHFT    &mo NUMBERS  &kp LSHFT  &kp RET  &kp HOME      &kp PG_UP  &kp BSPC  &kp SPACE &mo SYMBOLS &kp LSHFT
 			>;
 
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>; 
