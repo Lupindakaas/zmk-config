@@ -39,12 +39,12 @@
 // | F1   | F2   | F3  | F4   | F5   |  F6  |                                          |  <   |  7    |  8    |  9   |   +   |  /   |
 // | F7   | F8   | LEFT| UP   |RIGHT |  APOS|                                          |  ^   |  4    |  5    |  6   |   =   |  *   |
 // | F9   | F10  | F11 | DOWN | F12  | F13  |         |         |  |         |  SUPER  |  >   |  1    |  2    |  3   |   -   |  &   |
-//                     |      |      |NUMBER|   RET   |  HOME   |  |  PGUP   |  BSPC   | SPACE|  0    |       |
+//                     |      |NUMBER|      |         |         |  |  PGUP   |  BSPC   | SPACE|  0    |       |
 			bindings = <
 	&kp F1 &kp F2  &kp F3   &kp F4   &kp F5    &kp F6                                                 &kp LT    &kp N7 &kp N8 &kp N9 &kp PLUS  &kp FSLH
-	&kp F7 &kp F8  &kp LEFT &kp UP   &kp RIGHT &kp APOS                                               &kp CARET &kp N4 &kp N1 &kp N6 &kp EQUAL &kp ASTERISK
-	&kp F9 &kp F10 &kp F11  &kp DOWN &kp F12   &kp F13 &kp LSHFT &kp LSHFT        &kp LSHFT &kp LMETA &kp GT    &kp N1 &kp N2 &kp N3 &kp MINUS &kp AMPS
-	               &kp LSHFT &mo NUMBERS &kp LSHFT &kp RET &kp HOME               &kp PG_UP &kp BSPC  &kp SPACE &kp N0 &kp LSHFT
+	&kp F7 &kp F8  &kp LEFT &kp UP   &kp RIGHT &kp APOS                                               &kp CARET &kp N4 &kp N5 &kp N6 &kp EQUAL &kp ASTERISK
+	&kp F9 &kp F10 &kp F11  &kp DOWN &kp F12   &kp F13 &trans &trans        &kp LSHFT &kp LMETA &kp GT    &kp N1 &kp N2 &kp N3 &kp MINUS &kp AMPS
+	                        &trans &mo NUMBERS &trans  &trans &trans        &kp PG_UP &kp BSPC  &kp SPACE &kp N0 &kp LSHFT
 			>;
 
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>; 
