@@ -22,13 +22,13 @@
 // ---------------------------------------------------------------------------------------------------------------------------------
 // |  TAB  |  Q  |  W  |  E   |  R   |  T   |                                          |  Y   |  U    |  I    |  O   |   P   |      |
 // |  ESC  |  A  |  S  |  D   |  F   |  G   |                                          |  H   |  J    |  K    |  L   |       |      |
-// |  CTRL |  Z  |  Z  |  X   |  C   |  V   |         |         |  | DEVICE  |  SUPER  |      |  B    |  N    |  M   |       |      |
-//                     |      |      |NUMBER|   RET   |  HOME   |  |  PGUP   |  BSPC   | SPACE| LSHFT |SYMBOLS|
+// |  CTRL |  Z  |  Z  |  X   |  C   |  V   |         | GAMING  |  | DEVICE  |  SUPER  |      |  B    |  N    |  M   |       |      |
+//                     |      |NUMBER|LSHIFT|   RET   |  HOME   |  |  PGUP   |  BSPC   | SPACE|SYMBOLS|       |
 			bindings = <
-	&kp TAB   &kp Q &kp W &kp E &kp R &kp T                                                &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSLH
-	&kp ESC   &kp A &kp S &kp D &kp F &kp G                                                &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
-	&kp LCTRL &kp Z &kp Z &kp X &kp C &kp V &kp LSHFT &kp LSHFT        &mo DEVICE &kp LMETA &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp RCTRL
-	                &kp LSHFT &mo NUMBERS &kp LSHFT &kp RET &kp HOME   &kp PG_UP  &kp BSPC  &kp SPACE &mo SYMBOLS &kp LSHFT
+	&kp TAB   &kp Q &kp W &kp E &kp R &kp T                                              &kp Y  &kp U  &kp I &kp O &trans &trans
+	&kp ESC   &kp A &kp S &kp D &kp F &kp G                                              &kp H  &kp J  &kp K &kp L &kp P  &trans
+	&kp LCTRL &kp Z &kp Z &kp X &kp C &kp V &trans &tog GAMING      &mo DEVICE &kp LMETA &trans &kp B  &kp N &kp M &trans &trans
+	                &trans &mo NUMBERS &kp LSHFT &kp RET &kp HOME   &kp PG_UP  &kp BSPC  &kp SPACE &mo SYMBOLS &trans
 			>;
 
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>; 
@@ -69,12 +69,12 @@
 // ---------------------------------------------------------------------------------------------------------------------------------
 // |  ~   |  @   | €   | ?    |  :   |  "   |                                          |  <   |  /    |  {    |  }   |   +   |  /   |
 // |  _   |      | %   | .    |  ,   |  '   |                                          |  ^   |  |    |  (    |  )   |   =   |  *   |
-// | CAPS |  #   | $   | !    |  ;   |  `   |         |         |  |         |  SUPER  |  >   |  \    |  [    |  ]   |   -   |  &   |
+// | CAPS |  #   | $   | !    |  ;   |  `   |         | GAMING  |  |         |  SUPER  |  >   |  \    |  [    |  ]   |   -   |  &   |
 //                     |      |      |NUMBER|   RET   |  END    |  |  PGUP   |  BSPC   | SPACE|SYMBOLS|       |
 			bindings = <
 	&kp TILDE &kp AT   &kp RA(N5) &kp QMARK &kp COLON &kp DQT                                             &kp LT    &kp FSLH &kp LBRC    &kp RBRC    &kp PLUS  &kp FSLH
 	&kp UNDER &kp F8   &kp PRCNT  &kp DOT   &kp COMMA &kp APOS                                            &kp CARET &kp PIPE &kp KP_LPAR &kp KP_RPAR &kp EQUAL &kp ASTERISK
-	&kp CAPS  &kp HASH &kp DLLR   &kp EXCL  &kp SEMI  &kp GRAVE &kp LSHFT &kp LSHFT   &kp LSHFT &kp LMETA &kp GT    &kp BSLH &kp LBKT    &kp RBKT    &kp MINUS &kp AMPS
+	&kp CAPS  &kp HASH &kp DLLR   &kp EXCL  &kp SEMI  &kp GRAVE &kp LSHFT &tog GAMING &kp LSHFT &kp LMETA &kp GT    &kp BSLH &kp LBKT    &kp RBKT    &kp MINUS &kp AMPS
 	                              &kp LSHFT &mo NUMBERS &kp LSHFT &kp RET &kp HOME    &kp PG_UP &kp BSPC  &kp SPACE &mo SYMBOLS &kp LSHFT
 			>;
 
