@@ -6,6 +6,7 @@
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/bt.h>
 
 #define DEFAULT 0
 #define NUMBERS 1
@@ -21,12 +22,12 @@
 // |  TAB  |  Q  |  W  |  E   |  R   |  T   |                                          |  Y   |  U    |  I    |  O   |   P   |      |
 // |  ESC  |  A  |  S  |  D   |  F   |  G   |                                          |  H   |  J    |  K    |  L   |       |      |
 // |  CTRL |  Z  |  Z  |  X   |  C   |  V   |  LALT   |GAMING   |  |         |  SUPER  |      |  B    |  N    |  M   |       |      |
-//                     |      |NUMBER|LSHFT |  BSPC   |  HOME   |  |  PGUP   |   RET   | SPACE| LSHFT |SYMBOLS|
+//                     |      |NUMBER|LSHFT |  BSPC   |  HOME   |  |  PGUP   |   RET   | SPACE|SYMBOLS|       |
 			bindings = <
 	&kp TAB   &kp Q &kp W &kp E &kp R &kp T                                                &kp Y &kp U  &kp I &kp O &trans &trans
 	&kp ESC   &kp A &kp S &kp D &kp F &kp G                                                &kp H &kp J  &kp K &kp L &kp P  &trans
 	&kp LCTRL &kp Z &kp Z &kp X &kp C &kp V  &kp LALT &tog GAMING       &kp LSHFT &kp LMETA &trans &kp B &kp N &kp M &trans &trans
-	                &kp LSHFT &mo NUMBERS &kp LSHFT &kp BSPC &kp HOME   &kp PG_UP  &kp RET  &kp SPACE &mo SYMBOLS &kp LSHFT
+	                &kp LSHFT &mo NUMBERS &kp LSHFT &kp BSPC &kp HOME   &kp PG_UP  &kp RET  &kp SPACE &mo SYMBOLS &trans
 			>;
 
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>; 
@@ -58,7 +59,7 @@
 	&kp TILDE &kp AT   &kp RA(N5) &kp QMARK &kp COLON &kp DQT                                             &kp LT    &kp FSLH &kp LBRC    &kp RBRC    &kp PLUS  &kp FSLH
 	&kp UNDER &kp F8   &kp PRCNT  &kp DOT   &kp COMMA &kp APOS                                            &kp CARET &kp PIPE &kp KP_LPAR &kp KP_RPAR &kp EQUAL &kp ASTERISK
 	&kp CAPS  &kp HASH &kp DLLR   &kp EXCL  &kp SEMI  &kp GRAVE &kp LALT &kp LSHFT   &kp LSHFT &kp LMETA &kp GT    &kp BSLH &kp LBKT    &kp RBKT    &kp MINUS &kp AMPS
-	                              &kp LSHFT &mo NUMBERS &kp LSHFT &kp RET &kp HOME    &kp PG_UP &kp BSPC  &kp SPACE &mo SYMBOLS &kp LSHFT
+	                              &kp LSHFT &mo NUMBERS &kp LSHFT &kp RET &kp END    &kp PG_UP &kp BSPC  &kp SPACE &mo SYMBOLS &kp LSHFT
 			>;
 
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>; 
