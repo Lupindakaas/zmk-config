@@ -52,10 +52,10 @@
 		};
 			gaming_layer {
 			bindings = <
-	&kp TILDE &kp AT   &kp RA(N5) &kp QMARK &kp COLON &kp DQT                                             &kp LT    &kp FSLH &kp LBRC    &kp RBRC    &kp PLUS  &kp FSLH
-	&kp UNDER &kp F8   &kp PRCNT  &kp DOT   &kp COMMA &kp APOS                                            &kp CARET &kp PIPE &kp KP_LPAR &kp KP_RPAR &kp EQUAL &kp ASTERISK
-	&kp CAPS  &kp HASH &kp DLLR   &kp EXCL  &kp SEMI  &kp GRAVE &kp LSHFT &tog GAMING   &kp LSHFT &kp LMETA &kp GT    &kp BSLH &kp LBKT    &kp RBKT    &kp MINUS &kp AMPS
-	                              &kp LSHFT &mo NUMBERS &kp LSHFT &kp RET &kp HOME      &kp PG_UP &kp BSPC  &kp SPACE &mo SYMBOLS &kp LSHFT
+	&kp TAB   &kp N1    &kp N2  &kp N3 &kp N4 &kp N5                                                        &kp LT    &kp N7   &kp N8      &kp N9      &kp PLUS  &kp FSLH
+	&kp ESC   &kp LSHFT &kp A   &kp W  &kp D  &kp R                                                         &kp CARET &kp PIPE &kp KP_LPAR &kp KP_RPAR &kp EQUAL &kp ASTERISK
+	&kp LCTRL &kp Z     &kp Q   &kp S  &kp E  &kp F             &trans  &tog GAMING                &kp LSHFT &kp LMETA &kp GT    &kp BSLH &kp LBKT    &kp RBKT    &kp MINUS &kp AMPS
+	                            &kp LSHFT &mo NUMBERS &kp LSHFT &kp RET &kp HOME      &kp PG_UP &kp BSPC  &kp SPACE &mo SYMBOLS &kp LSHFT
 			>;
 
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>; 
