@@ -20,10 +20,10 @@
 
 		default_layer {
 			bindings = <
-	&kp TAB   &kp Q &kp W &kp E &kp R &kp T                                                &kp Y &kp U  &kp I &kp O &trans &trans
-	&kp ESC   &kp A &kp S &kp D &kp F &kp G                                                &kp H &kp J  &kp K &kp L &kp P  &trans
-	&kp LCTRL &kp Z &kp Z &kp X &kp C &kp V  &kp LMETA &tog GAMING       &mo DEVICE &kp LMETA &trans &kp B &kp N &kp M &trans &trans
-	                &kp LALT &mo NUMBERS &kp LSHFT &kp BSPC &kp HOME   &kp PG_UP  &kp RET  &kp SPACE &mo SYMBOLS &trans
+	&kp TAB   &kp Q &kp W &kp E &kp R &kp T                                                &kp Y &kp U  &kp I &kp O &trans &kp BSPC
+	&kp ESC   &kp A &kp S &kp D &kp F &kp G                                                &kp H &kp J  &kp K &kp L &kp P  &kp RET
+	&kp LCTRL &kp Z &kp Z &kp X &kp C &kp V  &kp LMETA &tog GAMING       &mo DEVICE &kp LMETA &trans &kp B &kp N &kp M &trans &kp DEL
+	                &kp LALT &mo NUMBERS &kp LSHFT &kp PG_UP &kp HOME    &kp END    &kp PG_DN &kp SPACE &mo SYMBOLS &trans
 			>;
 
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>; 
@@ -34,7 +34,7 @@
 	&kp F1 &kp F2  &kp F3   &kp F4   &kp F5    &kp F6                                             &kp LT    &kp N7 &kp N8 &kp N9 &kp PLUS  &kp FSLH
 	&kp F7 &kp F8  &kp LEFT &kp UP   &kp RIGHT &kp APOS                                           &kp CARET &kp N4 &kp N5 &kp N6 &kp EQUAL &kp ASTERISK
 	&kp F9 &kp F10 &kp F11  &kp DOWN &kp F12   &kp F13 &kp LMETA &trans        &kp LSHFT &kp LMETA &kp GT    &kp N1 &kp N2 &kp N3 &kp MINUS &kp AMPS
-	               &kp LALT &mo NUMBERS &kp LSHFT &kp RET &kp HOME           &kp PG_DN &kp BSPC  &kp SPACE &kp N0 &kp LSHFT
+	               &kp LALT &mo NUMBERS &kp LSHFT &kp PG_UP &kp HOME           &kp END   &kp BSPC  &kp SPACE &kp N0 &kp LSHFT
 			>;
 
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>; 
@@ -45,7 +45,7 @@
 	&kp TILDE &kp AT   &kp RA(N5) &kp QMARK &kp COLON &kp DQT                                             &kp LT    &kp FSLH &kp LBRC    &kp RBRC    &kp PLUS  &kp FSLH
 	&kp UNDER &kp F8   &kp PRCNT  &kp DOT   &kp COMMA &kp APOS                                            &kp CARET &kp PIPE &kp KP_LPAR &kp KP_RPAR &kp EQUAL &kp ASTERISK
 	&kp CAPS  &kp HASH &kp DLLR   &kp EXCL  &kp SEMI  &kp GRAVE &kp LMETA &kp LSHFT   &kp LSHFT &kp LMETA  &kp GT    &kp BSLH &kp LBKT    &kp RBKT    &kp MINUS &kp AMPS
-	                              &kp LALT &mo NUMBERS &kp LSHFT &kp RET &kp END    &kp PG_UP &kp BSPC  &kp SPACE &mo SYMBOLS &kp LSHFT
+	                              &kp LALT &mo NUMBERS &kp LSHFT &kp PG_UP &kp HOME   &kp END   &kp PG_DN  &kp SPACE &mo SYMBOLS &kp LSHFT
 			>;
 
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>; 
