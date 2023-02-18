@@ -26,7 +26,7 @@
 	                &kp LALT &mo NUMBERS &kp LSHFT &kp PG_UP &kp HOME    &kp END    &kp PG_DN &kp SPACE &mo SYMBOLS &trans
 			>;
 
-			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>; 
+			sensor-bindings = <&inc_dec_kp PG_UP PG_DN &inc_dec_kp C_VOL_UP C_VOL_DN>; 
 	};
 
 		number_layer {
@@ -37,7 +37,7 @@
 	               &kp LALT &mo NUMBERS &kp LSHFT &kp PG_UP &kp HOME           &kp END   &kp LALT  &kp SPACE &kp N0 &kp LSHFT
 			>;
 
-			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>; 
+			sensor-bindings = <&inc_dec_kp PG_UP PG_DN &inc_dec_kp C_VOL_UP C_VOL_DN>; 
 		};
 		
 			symbol_layer {
@@ -48,7 +48,7 @@
 	                              &kp LALT &mo NUMBERS &kp LSHFT &kp PG_UP &kp HOME   &kp END   &kp PG_DN  &kp SPACE &mo SYMBOLS &kp LSHFT
 			>;
 
-			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>; 
+			sensor-bindings = <&inc_dec_kp PG_UP PG_DN &inc_dec_kp C_VOL_UP C_VOL_DN>; 
 		};
 			gaming_layer {
 			bindings = <
@@ -58,7 +58,7 @@
 	                            &kp LALT &kp SPACE   &kp LSHFT &kp RET &kp HOME      &kp PG_UP &kp BSPC  &kp SPACE &mo SYMBOLS &kp LSHFT
 			>;
 
-			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>; 
+			sensor-bindings = <&inc_dec_kp PG_UP PG_DN &inc_dec_kp C_VOL_UP C_VOL_DN>; 
 		};
 			device_layer {
 			bindings = <
@@ -68,7 +68,7 @@
 	                                       &trans       &mo NUMBERS  &kp LSHFT  &kp RET  &kp HOME      &kp PG_UP  &kp BSPC  &kp SPACE &mo SYMBOLS &trans
 			>;
 
-			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>; 
+			sensor-bindings = <&inc_dec_kp PG_UP PG_DN &inc_dec_kp C_VOL_UP C_VOL_DN>; 
 		};
 	};
 };
