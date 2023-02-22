@@ -42,9 +42,9 @@
 		
 			symbol_layer {
 			bindings = <
-	&kp TILDE &kp AT   &kp RA(N5) &kp QMARK &kp COLON &kp DQT                                             &kp LT    &kp FSLH &kp LBRC    &kp RBRC    &kp PLUS  &kp FSLH
+	&kp TILDE &kp AT   &kp RA(N5) &kp EXCL  &kp COLON &kp DQT                                             &kp LT    &kp FSLH &kp LBRC    &kp RBRC    &kp PLUS  &kp FSLH
 	&kp UNDER &kp F8   &kp PRCNT  &kp DOT   &kp COMMA &kp APOS                                            &kp CARET &kp PIPE &kp KP_LPAR &kp KP_RPAR &kp EQUAL &kp ASTERISK
-	&kp CAPS  &kp HASH &kp DLLR   &kp EXCL  &kp SEMI  &kp GRAVE &kp LMETA &kp LSHFT   &kp LSHFT &kp LMETA  &kp GT    &kp BSLH &kp LBKT    &kp RBKT    &kp MINUS &kp AMPS
+	&kp CAPS  &kp HASH &kp DLLR   &kp QMARK &kp SEMI  &kp GRAVE &kp LMETA &kp LSHFT   &kp LSHFT &kp LMETA  &kp GT    &kp BSLH &kp LBKT    &kp RBKT    &kp MINUS &kp AMPS
 	                              &kp LALT &mo NUMBERS &kp LSHFT &kp PG_UP &kp HOME   &kp END   &kp PG_DN  &kp SPACE &mo SYMBOLS &kp LSHFT
 			>;
 
